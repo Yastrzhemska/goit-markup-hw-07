@@ -11,7 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    <link rel="stylesheet" href="./css/stylesmob.css">
+    
+
 </head>
 
 <body>
@@ -35,24 +38,80 @@
                             111-11-11</a></li>
                 </ul>
             </address>
+            <button class="mobile-menu-open" type="button" data-menu-open>
+                <svg class="mobile-menu-btn" width="32" height="22">
+                    <use href="./images/icons.svg#icon-menu-hamburger"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <div class="container container-mobile-menu">
+                <button class="mobile-menu-close" type="button" data-menu-close>
+                    <svg class="mobile-close-icon" width="8" height="8">
+                        <use href="./images/icons.svg#icon-modal_close"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu-list list">
+                    <li class="mobile-menu-item"><a class="mobile-menu-link link" href="./index.html">Studio</a></li>
+                    <li class="mobile-menu-item"><a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a></li>
+                    <li class="mobile-menu-item"><a class="mobile-menu-link-activ link" href="">Contacts</a></li>
+                </ul>
+                <div>
+                    <ul class="mobile-contact-list list">
+                        <li class="mobile-contact-item">
+                            <a class="mobile-contact-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                        </li>
+                        <li class="mobile-contact-item">
+                            <a class="mobile-contact-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="mobile-menu-soc list">
+                        <li class="mobile-soc-item"><a class="mobile-soc-link link" href target="_blank" rel="noopener noreferrer nofollow">
+                                <svg class="mobile-soc-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-soc-item"><a class="mobile-soc-link link" href target="_blank" rel="noopener noreferrer nofollow">
+                                <svg class="mobile-soc-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-soc-item"><a class="mobile-soc-link link" href target="_blank" rel="noopener noreferrer nofollow">
+                                <svg class="mobile-soc-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-soc-item"><a class="mobile-soc-link link" href target="_blank" rel="noopener noreferrer nofollow">
+                                <svg class="mobile-soc-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
         </div>
     </header>
     <!--Main content-->
     <main>
         <!--Hero-->
-        <section class="hero">
+        <!-- <section class="hero">
             <div class="container">
                 <h1 class="main-head">Effective Solutions for Your Business</h1>
                 <button class="modal-btn" type="button" data-modal-open>Order Service</button>
             </div>
-        </section>
+        </section> -->
         <!--About company-->
         <section class="section-about">
             <div class="container">
                 <h2 class="section-title visually-hidden" hidden>About company</h2>
-                <ul class="list-about list">
-                    <li class="list-about-item">
-                        <div class="about-icons">
+                <ul class="list-about list w-1/2">
+                    <li class="list-about-item text-align-center-sm text-align-left-md w-sm">
+                        <div class="about-icons sm-hide">
                             <svg width="64" height="64">
                                 <use href="./images/icons.svg#icon-antenna"></use>
                             </svg>
@@ -62,7 +121,7 @@
                                 problem to walk away with the perfect and creative solution.</p>
                     </li>
                     <li class="list-about-item">
-                        <div class="about-icons">
+                        <div class="about-icons sm-hide">
                             <svg width="64" height="64">
                                 <use href="./images/icons.svg#icon-clock"></use>
                             </svg>
@@ -73,7 +132,7 @@
                             possible time.</p>
                     </li>
                     <li class="list-about-item">
-                        <div class="about-icons">
+                        <div class="about-icons sm-hide">
                             <svg width="64" height="64">
                                 <use href="./images/icons.svg#icon-diagram"></use>
                             </svg>
@@ -84,7 +143,7 @@
                             and minimize risk.</p>
                     </li>
                     <li class="list-about-item">
-                        <div class="about-icons">
+                        <div class="about-icons sm-hide">
                             <svg width="64" height="64">
                                 <use href="./images/icons.svg#icon-astronaut"></use>
                             </svg>
@@ -98,7 +157,7 @@
             </div>
         </section>
         <!--What are we doing-->
-        <section class="section-preview preview-container">
+        <!-- <section class="section-preview preview-container">
             <div class="container">
                 <h2 class="section-title">What are we doing</h2>
                 <ul class="list-preview list">
@@ -110,13 +169,13 @@
                             width="360" height="300"></li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!--Our Team-->
-        <section class="team-section">
+        <!-- <section class="team-section">
             <div class="container">
                 <h2 class="section-title">Our Team</h2>
                 <ul class="list-team list">
-                    <li class="list-team-items"><img class="list-team-img" src="./images/markguerrero.jpg"
+                    <li class="list-team-items w-sm-1 w-md-1/2"><img class="list-team-img" src="./images/markguerrero.jpg"
                             alt="Mark Guerrero" width="264">
                         <div class="sub-text-team">
                             <h3 class="subtitle-team">Mark Guerrero</h3>
@@ -153,7 +212,7 @@
                             </ul> 
                         </div>
                     </li>
-                    <li class="list-team-items"><img class="list-team-img" src="./images/tomford.jpg" alt="Tom Ford"
+                    <li class="list-team-items w-sm-1 w-md-1/2"><img class="list-team-img" src="./images/tomford.jpg" alt="Tom Ford"
                             width="264">
                         <div class="sub-text-team">
                             <h3 class="subtitle-team">Tom Ford</h3>
@@ -266,9 +325,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> --> 
         <!-- Customers -->
-        <section class="section-customers">
+        <!-- <section class="section-customers">
             <div class="container">
                 <h2 class="section-title">Customers</h2>
                 <ul class="customers-list list">
@@ -320,7 +379,7 @@
         </section>
     </main>
     <!--Footer-->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container container-soc-media-fotter">
             <div class="text-footer-div">
                 <a class="link logo" href="./index.html">Web<span class="logo-footer">Studio</span></a>
@@ -372,9 +431,9 @@
             </div>
         </div>
         </form>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal-close-btn" type="button" data-modal-close>
                 <svg class="icon-modal-close" width="8" height="8">
@@ -427,9 +486,10 @@
                 <button class="modal-send-btn" type="submit">Send</button>
             </form>
         </div>
-    </div>
+    </div> -->
 
-    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
 </body>
 
 </html>

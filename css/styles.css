@@ -13,7 +13,7 @@
     --color-icon: #8E8F99;
     --transition-duration: 250ms;
     --transition-funct: cubic-bezier(0.4, 0, 0.2, 1);
-    
+
 
 }
 
@@ -84,9 +84,7 @@ img {
     color: var(--logo-color-second);
 }
 
-.nav-item {
-
-}
+.nav-item {}
 
 .nav-link {
     font-weight: 500;
@@ -297,7 +295,7 @@ img {
 
 .preview-container {
     padding-bottom: 120px;
-    
+
 }
 
 .list-preview {
@@ -405,7 +403,7 @@ img {
     padding-bottom: 120px;
 }
 
-.section-title{
+.section-title {
     margin-bottom: 72px;
 }
 
@@ -477,7 +475,7 @@ img {
     margin-top: 16px;
 }
 
-.text-footer-div{
+.text-footer-div {
     width: 264px;
 }
 
@@ -522,7 +520,7 @@ img {
 }
 
 .soc-media-icon {
-    fill: var(--color-studiofooter-btnprof) ;
+    fill: var(--color-studiofooter-btnprof);
 }
 
 .soc-media-link:hover,
@@ -540,7 +538,7 @@ img {
     line-height: 24px;
     letter-spacing: 0.02em;
     color: var(--color-white-text);
-    
+
     margin-bottom: 16px;
 }
 
@@ -572,7 +570,7 @@ img {
     display: flex;
     align-items: center;
     letter-spacing: 0.04em;
-    
+
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -610,7 +608,7 @@ img {
 .portfolio-section {
     padding-top: 96px;
     padding-bottom: 120px;
-    
+
 }
 
 .menu-btn-portfolio {
@@ -655,7 +653,7 @@ img {
     display: block;
 
     transition: box-shadow var(--transition-duration) var(--transition-funct);
-    
+
 }
 
 
@@ -711,11 +709,11 @@ img {
     color: var(--color-studiofooter-btnprof);
     background-color: var(--logo-color-first);
 
-    padding: 40px 32px 0 32px; 
+    padding: 40px 32px 0 32px;
     width: 100%;
     height: 100%;
     transform: translate(0, 101%);
-    transition:transform 250ms linear ;
+    transition: transform 250ms linear;
 
     position: absolute;
     top: 0;
@@ -738,7 +736,8 @@ img {
 
     width: 100%;
     height: 100%;
-    background-color: rgba(46, 47, 66, 0.4);;
+    background-color: rgba(46, 47, 66, 0.4);
+    ;
 
     transition: opacity var(--transition-duration) var(--transition-funct), visibility var(--transition-duration) var(--transition-funct);
 }
@@ -753,7 +752,7 @@ img {
 
 .modal {
     width: 408px;
-    
+
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -782,7 +781,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     position: absolute;
     top: 24px;
     right: 24px;
@@ -791,7 +790,7 @@ img {
 }
 
 .icon-modal-close {
-    transition: fill var(--transition-duration) var(--transition-funct) ;
+    transition: fill var(--transition-duration) var(--transition-funct);
 }
 
 .modal-close-btn:hover,
@@ -818,7 +817,7 @@ img {
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
-    letter-spacing: 0.02em;  
+    letter-spacing: 0.02em;
     color: var(--logo-color-second);
 }
 
@@ -828,7 +827,7 @@ img {
 
 .input-wrap {
     position: relative;
-    
+
 }
 
 .modal-label-text {
@@ -856,8 +855,8 @@ img {
     background-color: transparent;
 
     transition: border-color var(--transition-duration) var(--transition-funct);
-    
-    
+
+
 }
 
 .modal-input:focus,
@@ -865,8 +864,8 @@ img {
     border-color: var(--logo-color-first);
 }
 
-.modal-input:focus + .modal-input-icon,
-.modal-input:hover + .modal-input-icon {
+.modal-input:focus+.modal-input-icon,
+.modal-input:hover+.modal-input-icon {
     fill: var(--logo-color-first);
 }
 
@@ -937,7 +936,7 @@ textarea::placeholder {
     fill: transparent;
 }
 
-.modal-check:checked + .check-text span {
+.modal-check:checked+.check-text span {
     background-color: var(--accent-color);
     border: none;
     fill: var(--color-studiofooter-btnprof);
