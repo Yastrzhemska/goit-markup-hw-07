@@ -720,7 +720,7 @@ c
     width: 100%;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
-    ;
+    
 
     transition: opacity var(--transition-duration) var(--transition-funct), visibility var(--transition-duration) var(--transition-funct);
 }
@@ -879,13 +879,7 @@ c
     transition: border-color var(--transition-duration) var(--transition-funct);
 }
 
-textarea::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: rgba(117, 117, 117, 0.5);
-}
+c
 
 .modal-comment-text:hover,
 .modal-comment-text:focus {
