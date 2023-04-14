@@ -1053,19 +1053,54 @@ img {
 
 @media screen and (min-width: 768px) {
     .container-soc-media-fotter {
-        flex-wrap: wrap;
+        display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+    
+
+    }
+
+    .logo-soc-footer {
+        display: flex;
+        gap: var(--card-gap);
+    }
+
+    .footer-form-div {
+        min-width: 453px;
+        margin-left: 108px;
+        margin-right: 0;
+        padding-left: 0;
+    }
+
+    .footer-form {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+        gap: var(--card-gap);
+    }
+
+    .footer-form-title {
+        
         
     }
 
-
     .soc-subtitle {
         margin-top: auto;
+        margin-bottom: 16px;
+        
     } 
+
+    .footer-input {
+        width: 264px;
+    }
 }
 
 @media screen and (min-width: 1158px) {
 
+    .footer-form-div {
+
+    }
 }
 
 
