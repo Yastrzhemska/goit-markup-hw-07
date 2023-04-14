@@ -422,9 +422,9 @@ img {
     margin-left: auto;
 }
 
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .hero {
         background-image: var(--color-grad), url('../images/people-office-mob2x.jpeg');
     }
@@ -465,7 +465,9 @@ img {
 
     .hero {
         max-width: 768px;
+        background-image: var(--color-grad), url(../images/people-office-tab1x.jpeg);
     }
+
         
     .main-head {
         font-size: 56px;
@@ -479,9 +481,15 @@ img {
         
     }
 
-
-
 }
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+        .hero {
+            background-image: var(--color-grad), url('../images/people-office-tab2x.jpeg');
+        }
+    }
 
 @media screen and (min-width: 1158px) {
 
@@ -489,7 +497,11 @@ img {
         max-width: 1440px;
         padding-top: 188px;
         padding-bottom: 188px;
+        background-image: var(--color-grad), url(../images/people-office1.jpg);
     }
+
+
+
     .modal-btn {
         margin-top: 48px;
         transition: background-color var(--transition-duration) var(--transition-funct);
@@ -501,6 +513,14 @@ img {
     }
 
 }
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+    screen and (min-resolution: 192dpi) and (min-width: 1158px),
+    screen and (min-resolution: 2dppx) and (min-width: 1158px) {
+        .hero {
+            background-image: var(--color-grad), url('../images/people-office2x.jpeg');
+        }
+    }
 
 
 
@@ -772,9 +792,6 @@ img {
     
     }
 
-    /* .list-team-items {
-        flex-basis: calc((100% - 1 * 24px) / 2);
-    } */
 }
 
 
@@ -853,6 +870,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+
     .customers-list {
         gap: var(--card-gap);
     }
@@ -890,7 +908,7 @@ img {
 
 /*======================================Footer======================================*/
 
-@media screen and (min-width: 0px) and (max-width: 768px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
     .container-soc-media-fotter {
         justify-content: center;
     }
@@ -1099,19 +1117,20 @@ img {
 
 @media screen and (min-width: 768px) {
 
-    
-
     .footer {
         
+        
     }
-
 
     .container-soc-media-fotter {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
 
     }
+
 
     .logo-soc-footer {
         display: flex;
