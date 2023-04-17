@@ -953,6 +953,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
     .logo {
         text-align: center;
+        display: block;
         
     }
 
@@ -969,11 +970,6 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 }
 
 .container-soc-media-fotter {
-    /* display: flex;
-    flex-direction: column; */
-
-    /* align-items: center; */
-    /* justify-content: center; */
     margin-right: auto;
     margin-left: auto;
 
