@@ -1310,10 +1310,24 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 }
 
 .icon-modal-close {
+    transition: fill var(--transition-duration) var(--transition-funct);
+}
+
+.icon-modal-close {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    background-color: var(--accent-color);
+}
+
+.modal-close-btn:hover .icon-modal-close,
+.modal-close-btn:focus .icon-modal-close {
+    fill: var(--color-white-text);
 }
 
 .modal-title {
@@ -1359,6 +1373,18 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     color: var(--logo-color-second);
     outline: none;
     background-color: transparent;
+
+    transition: border-color var(--transition-duration) var(--transition-funct);
+}
+
+.modal-input:focus,
+.modal-input:hover {
+    border-color: var(--logo-color-first);
+}
+
+.modal-input:focus+.modal-input-icon,
+.modal-input:hover+.modal-input-icon {
+    fill: var(--logo-color-first);
 }
 
 .modal-input-icon {
@@ -1367,6 +1393,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     top: 50%;
     transform: translateY(-50%);
 
+    transition: fill var(--transition-duration) var(--transition-funct);
 }
 
 .modal-comment-text {
@@ -1384,6 +1411,12 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
     display: block;
 
+    transition: border-color var(--transition-duration) var(--transition-funct);
+}
+
+.modal-comment-text:hover,
+.modal-comment-text:focus {
+    border-color: var(--logo-color-first);
 }
 
 textarea::placeholder {
@@ -1451,6 +1484,11 @@ textarea::placeholder {
     border-radius: 4px;
     padding: 16px 32px;
     margin: auto;
+}
+
+.modal-send-btn:hover,
+.modal-send-btn:focus {
+    background-color: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
